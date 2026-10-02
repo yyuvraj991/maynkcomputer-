@@ -8,7 +8,10 @@ import {
   Award,
   Zap,
   PhoneCall,
-  GraduationCap
+  GraduationCap,
+  Landmark,
+  Cpu,
+  FileText
 } from 'lucide-react';
 
 interface HeroProps {
@@ -17,11 +20,16 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ onOpenAdmissionModal, onOpenVerify }) => {
-  const { openEnquiryModal, settings } = useApp();
+  const { openEnquiryModal, settings, setCurrentPage } = useApp();
 
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleOpenPage = (page: 'lok-seva' | 'pc-build') => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -62,29 +70,53 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAdmissionModal, onOpenVerify }
               Empowering students, job seekers, and local citizens with job-ready practical computer courses (MS Office, Excel, Tally, Typing) and express digital documentation services.
             </p>
 
-            {/* CTAs */}
-            <div className="mt-6 flex flex-wrap items-center gap-3 w-full sm:w-auto">
+            {/* CTAs Requested: Services -> Lok Seva Kendra -> PC Build */}
+            <div className="mt-6 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 w-full sm:w-auto">
+              {/* 1. Services Button */}
               <button
-                onClick={() => scrollTo('courses')}
+                onClick={() => scrollTo('services')}
                 className="w-full sm:w-auto px-5 py-3 bg-white hover:bg-slate-100 text-slate-950 font-bold text-xs sm:text-sm rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 hover:translate-y-[-1px] cursor-pointer"
               >
-                <span>Explore Courses</span>
+                <FileText className="w-4 h-4 text-blue-700" />
+                <span>Services (डिजिटल सेवाएं)</span>
                 <ArrowRight className="w-4 h-4 text-slate-950" />
               </button>
 
+              {/* 2. Lok Seva Kendra Button */}
               <button
-                onClick={() => scrollTo('contact')}
-                className="w-full sm:w-auto px-5 py-3 bg-slate-800/90 hover:bg-slate-700 text-slate-100 font-semibold text-xs sm:text-sm rounded-xl border border-slate-700 backdrop-blur-sm transition-all flex items-center justify-center gap-2 cursor-pointer"
+                onClick={() => handleOpenPage('lok-seva')}
+                className="w-full sm:w-auto px-5 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm rounded-xl border border-blue-500/80 shadow-md transition-all flex items-center justify-center gap-2 hover:translate-y-[-1px] cursor-pointer"
               >
-                <span>Contact Us</span>
+                <Landmark className="w-4 h-4 text-white" />
+                <span>लोक सेवा केंद्र (Lok Seva Kendra)</span>
+                <ArrowRight className="w-4 h-4 text-blue-200" />
               </button>
 
+              {/* 3. PC Build & Repair Button */}
               <button
-                onClick={onOpenAdmissionModal}
-                className="w-full sm:w-auto px-5 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm rounded-xl border border-emerald-500/50 shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
+                onClick={() => handleOpenPage('pc-build')}
+                className="w-full sm:w-auto px-5 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm rounded-xl border border-emerald-500/50 shadow-md transition-all flex items-center justify-center gap-2 hover:translate-y-[-1px] cursor-pointer"
               >
-                <GraduationCap className="w-4 h-4 text-white" />
-                <span>Online Admission</span>
+                <Cpu className="w-4 h-4 text-white" />
+                <span>PC Build & Laptop Repair</span>
+                <ArrowRight className="w-4 h-4 text-emerald-200" />
+              </button>
+            </div>
+
+            {/* Quick Links for Courses & Contact */}
+            <div className="mt-3.5 flex flex-wrap items-center gap-4 text-xs text-slate-300">
+              <button
+                onClick={() => scrollTo('courses')}
+                className="hover:text-white underline underline-offset-4 flex items-center gap-1.5 transition-colors cursor-pointer"
+              >
+                <GraduationCap className="w-3.5 h-3.5 text-amber-400" />
+                <span>Computer Courses देखें →</span>
+              </button>
+              <button
+                onClick={() => scrollTo('contact')}
+                className="hover:text-white underline underline-offset-4 flex items-center gap-1.5 transition-colors cursor-pointer"
+              >
+                <span>Contact & Map →</span>
               </button>
             </div>
 

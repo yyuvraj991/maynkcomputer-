@@ -34,15 +34,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAdmissionModal, onOpenVerify }
 
   return (
     <section id="home" className="relative overflow-hidden bg-slate-950 text-white pt-10 pb-14 sm:pt-14 sm:pb-18 scroll-mt-24">
-      {/* High-visibility Computer Institute Training Lab Background Image */}
+      {/* High-visibility Background Image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2000&q=80')`
+          backgroundImage: `url('https://res.cloudinary.com/dsfl20cs1/image/upload/v1790944372/WhatsApp_Image_2026-10-02_at_5.08.18_PM.jpg')`
         }}
       >
-        {/* Semi-transparent dark overlay so the background image is clearly visible throughout */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-950/55 to-slate-950/65" />
+        {/* Semi-transparent dark overlay so text is crisp and image is visible */}
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-950/60 to-slate-950/70" />
         <div className="absolute inset-0 bg-slate-950/20" />
       </div>
 

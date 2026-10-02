@@ -198,39 +198,39 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Embedded Visual Map Preview */}
-            <div className="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-xs">
-              <div className="p-3 bg-slate-100 border-b border-slate-200 flex items-center justify-between text-xs font-semibold text-slate-700">
-                <span className="flex items-center gap-1.5 font-semibold text-slate-800">
-                  <MapPin className="w-3.5 h-3.5 text-blue-700" />
-                  Location Map — Nagpura, Durg, Chhattisgarh 491001
+            {/* Embedded Visual Map Preview (Compact & Small) */}
+            <a
+              href={settings.googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group rounded-xl overflow-hidden border border-slate-200 bg-white shadow-xs hover:border-blue-400 hover:shadow-md transition-all cursor-pointer"
+            >
+              <div className="py-1.5 px-3 bg-slate-50 border-b border-slate-200 flex items-center justify-between text-[11px] font-semibold text-slate-700">
+                <span className="flex items-center gap-1.5 truncate">
+                  <MapPin className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                  <span className="truncate">Nagpura, Durg, Chhattisgarh - 491001</span>
                 </span>
-                <a
-                  href={settings.googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-700 hover:underline"
-                >
-                  Open in Google Maps ↗
-                </a>
+                <span className="text-blue-700 font-bold shrink-0 ml-2 group-hover:underline">
+                  Google Maps ↗
+                </span>
               </div>
-              <div className="relative aspect-[16/9] w-full bg-slate-200 flex items-center justify-center">
+              <div className="relative h-24 sm:h-28 w-full bg-slate-200 overflow-hidden flex items-center justify-center">
                 <img
-                  src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1000&q=80"
+                  src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80"
                   alt="City Map Location"
-                  className="w-full h-full object-cover opacity-80"
+                  className="w-full h-full object-cover opacity-75 group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-blue-950/20 backdrop-blur-[1px] flex flex-col items-center justify-center text-center p-4">
-                  <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-xl animate-bounce mb-2">
-                    <MapPin className="w-6 h-6" />
+                <div className="absolute inset-0 bg-blue-950/25 flex items-center justify-center gap-2 p-2">
+                  <div className="w-7 h-7 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-md shrink-0">
+                    <MapPin className="w-3.5 h-3.5" />
                   </div>
-                  <div className="bg-white/95 px-4 py-2 rounded-xl shadow-lg border border-slate-200 text-xs">
-                    <p className="font-extrabold text-slate-900">MAYANK COMPUTER</p>
-                    <p className="text-slate-600 text-[11px]">Nagpura, Durg, Chhattisgarh - 491001</p>
+                  <div className="bg-white/95 px-2.5 py-1 rounded-lg shadow-sm border border-slate-200 text-left">
+                    <p className="font-extrabold text-slate-900 text-xs leading-none">MAYANK COMPUTER</p>
+                    <p className="text-slate-500 text-[10px] leading-tight mt-0.5">Click to view on Map 📍</p>
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           {/* Right Column: Interactive Enquiry Form */}

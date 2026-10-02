@@ -117,7 +117,7 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 
 const LOCAL_STORAGE_KEYS = {
   COURSES: 'mayank_courses_v1',
-  SERVICES: 'mayank_services_v1',
+  SERVICES: 'mayank_services_v2',
   JOBS: 'mayank_jobs_v1',
   EDUCATION: 'mayank_education_v1',
   GALLERY: 'mayank_gallery_v1',

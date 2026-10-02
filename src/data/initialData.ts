@@ -245,44 +245,6 @@ export const initialCourses: Course[] = [
 
 export const initialServices: DigitalService[] = [
   {
-    id: 'serv-1',
-    slug: 'computer-training',
-    title: 'Computer Training',
-    shortDescription: 'Personalized 1-on-1 practical training on computers, typing and corporate software.',
-    fullDescription: 'We provide specialized practical classes for school students, college learners, housewives, job aspirants, and working professionals. Flexible batch timings (Morning, Afternoon, Evening).',
-    icon: 'Monitor',
-    image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80',
-    estimatedTime: 'Daily Batches (1-2 Hours)',
-    priceEstimate: 'Starting ₹600/month',
-    features: [
-      '1 Student per PC guarantee',
-      'High-speed internet in computer lab',
-      'Printed study notes & shortcut cheat-sheets',
-      'Weekend revision & doubts sessions',
-      'Course completion certificates'
-    ],
-    status: 'published'
-  },
-  {
-    id: 'serv-2',
-    slug: 'typing-services',
-    title: 'Typing (Hindi & English)',
-    shortDescription: 'Fast & accurate typing of Hindi (Kruti Dev/Mangal) and English documents, projects and books.',
-    fullDescription: 'Get your official documents, legal affidavits, school/college thesis, question papers, and books typed with flawless grammar and formatting. Fast turnaround with immediate printouts.',
-    icon: 'Keyboard',
-    image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80',
-    estimatedTime: '15-30 Mins / Express Delivery',
-    priceEstimate: '₹20 - ₹40 per page',
-    features: [
-      'Hindi Kruti Dev & Mangal font typing',
-      'English corporate & legal formatting',
-      'Mathematical formulas & equation typing',
-      'Direct proofreading and spelling corrections',
-      'Hard copy + Editable Word / PDF file handover'
-    ],
-    status: 'published'
-  },
-  {
     id: 'serv-3',
     slug: 'printing-services',
     title: 'High-Quality Printing',
@@ -380,7 +342,7 @@ export const initialServices: DigitalService[] = [
   {
     id: 'serv-8',
     slug: 'software-installation',
-    title: 'Software Installation',
+    title: 'Software & OS Installation',
     shortDescription: 'Genuine Windows OS setup, MS Office, Antivirus, device drivers, and utility software installation.',
     fullDescription: 'Is your computer running slow or showing blue-screen errors? We install clean Windows 10/11 operating systems, update missing audio/graphics/network drivers, and setup licensed antivirus suites.',
     icon: 'Download',
@@ -393,44 +355,6 @@ export const initialServices: DigitalService[] = [
       'Quick Heal / K7 / Kaspersky Antivirus setup',
       'Printer and scanner driver installations',
       'Hindi font packages (Kruti Dev, Devlys, Mangal) setup'
-    ],
-    status: 'published'
-  },
-  {
-    id: 'serv-9',
-    slug: 'computer-setup-maintenance',
-    title: 'Computer Setup & Maintenance',
-    shortDescription: 'Desktop assembly, SSD upgrade, RAM enhancement, thermal paste application & hardware repair.',
-    fullDescription: 'Boost your old desktop or laptop speed by 10x with our instant SSD upgrades. We provide complete hardware diagnostic checks, dust cleaning, cable management, and home/office PC assembly.',
-    icon: 'Cpu',
-    image: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=800&q=80',
-    estimatedTime: 'Same Day Service',
-    priceEstimate: 'Diagnostics from ₹150',
-    features: [
-      'Old PC to Superfast SSD upgrade (128GB / 256GB / 512GB)',
-      'DDR3 / DDR4 RAM upgrade for smooth multitasking',
-      'Custom PC assembly for offices, gaming & video editing',
-      'Deep motherboard dust cleaning & fan replacement',
-      'Power supply (SMPS) and cabinet maintenance'
-    ],
-    status: 'published'
-  },
-  {
-    id: 'serv-10',
-    slug: 'digital-services',
-    title: 'Digital & Citizen Services',
-    shortDescription: 'Aadhaar PVC card ordering, electricity/water bill payments, money transfer & DigiLocker setup.',
-    fullDescription: 'A one-stop digital hub for all your e-governance and banking needs. From downloading original Aadhaar cards to booking train tickets and paying electricity bills, we make digital life simple.',
-    icon: 'Globe',
-    image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80',
-    estimatedTime: 'Immediate / 5-10 Mins',
-    priceEstimate: '₹20 - ₹50 service fee',
-    features: [
-      'Official Aadhaar PVC Smart Card booking',
-      'Instant Electricity, Water, Gas & Mobile recharge',
-      'IRCTC Train & Bus ticket booking with instant PNR status',
-      'Fast Domestic Money Remittance & AePS balance enquiry',
-      'DigiLocker document retrieval and verification'
     ],
     status: 'published'
   }

@@ -62,26 +62,26 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-10 sm:py-14 bg-slate-50 border-b border-slate-200 scroll-mt-24">
+    <section id="contact" className="py-8 sm:py-14 bg-slate-50 border-b border-slate-200 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-2xl">
           <p className="text-xs font-bold uppercase tracking-wider text-blue-700">
             Get in Touch
           </p>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="mt-1 sm:mt-2 text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Contact Mayank Computer
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-slate-600">
+          <p className="mt-2 text-xs sm:text-base text-slate-600">
             Have questions about new admissions, batch timings, fees, or urgent digital print/scan services? Reach out directly or drop us a message.
           </p>
         </div>
 
         {/* 2-Column Layout */}
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 items-start">
           {/* Left Column: Contact Cards & Map View */}
-          <div className="lg:col-span-6 space-y-6">
-            <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-xs">
+          <div className="lg:col-span-6 space-y-4 sm:space-y-6">
+            <div className="bg-white rounded-2xl border border-slate-200 p-4 sm:p-8 shadow-xs">
               <h3 className="text-xl font-bold text-slate-900">
                 Mayank Computer Center
               </h3>
@@ -235,7 +235,7 @@ export const Contact: React.FC = () => {
 
           {/* Right Column: Interactive Enquiry Form */}
           <div className="lg:col-span-6">
-            <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-xs">
+            <div className="bg-white rounded-2xl border border-slate-200 p-4 sm:p-8 shadow-xs">
               <div className="flex items-center gap-2">
                 <Send className="w-5 h-5 text-blue-700" />
                 <h3 className="text-xl font-bold text-slate-900">

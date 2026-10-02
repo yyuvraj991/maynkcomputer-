@@ -103,10 +103,28 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAdmissionModal, onOpenVerify }
                 <span>Govt Recognized Certificate</span>
               </div>
             </div>
+
+            {/* Mobile-only Quick Stats Bar */}
+            <div className="lg:hidden mt-4 pt-3 border-t border-slate-800/80 w-full flex items-center justify-between text-center bg-slate-900/60 p-3 rounded-xl border border-slate-800">
+              <div>
+                <div className="text-base font-black text-white">12+</div>
+                <div className="text-[10px] text-slate-400">Years Exp</div>
+              </div>
+              <div className="h-6 w-px bg-slate-700" />
+              <div>
+                <div className="text-base font-black text-white">5,000+</div>
+                <div className="text-[10px] text-slate-400">Students</div>
+              </div>
+              <div className="h-6 w-px bg-slate-700" />
+              <div>
+                <div className="text-base font-black text-emerald-400">100%</div>
+                <div className="text-[10px] text-slate-400">Practical</div>
+              </div>
+            </div>
           </div>
 
-          {/* Right Column: Clean Compact Summary Card (No duplicated bullets) */}
-          <div className="lg:col-span-5 relative">
+          {/* Right Column: Clean Compact Summary Card (Desktop only, hides duplicate on mobile) */}
+          <div className="lg:col-span-5 relative hidden lg:block">
             <div className="relative mx-auto max-w-md lg:max-w-none rounded-2xl bg-slate-900/90 border border-slate-700/80 p-5 sm:p-6 shadow-2xl backdrop-blur-md">
               <div className="flex items-center justify-between pb-3 border-b border-slate-800">
                 <div className="flex items-center gap-3">

@@ -1,0 +1,8 @@
+{
+  "name": "Mayank Computer - Computer Education & Digital Services",
+  "description": "Professional computer education institute, certification courses, digital services, and job placement assistance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

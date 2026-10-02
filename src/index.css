@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    scroll-padding-top: 5.5rem;
+  }
+}
+
+@keyframes wa-sonar {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes wa-sonar-second {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.6;
+  }
+  60% {
+    transform: scale(1.22);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes wa-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes wa-wiggle {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  15% { transform: rotate(-14deg) scale(1.08); }
+  30% { transform: rotate(14deg) scale(1.08); }
+  45% { transform: rotate(-10deg) scale(1.08); }
+  60% { transform: rotate(10deg) scale(1.08); }
+  75% { transform: rotate(-4deg) scale(1.04); }
+}
+
+.animate-wa-sonar {
+  animation: wa-sonar 2.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.animate-wa-sonar-second {
+  animation: wa-sonar-second 2.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite 0.7s;
+}
+
+.animate-wa-float {
+  animation: wa-float 3.5s ease-in-out infinite;
+}
+
+.animate-wa-wiggle {
+  animation: wa-wiggle 1.2s ease-in-out infinite;
+}
+
+

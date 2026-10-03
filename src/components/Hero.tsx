@@ -38,7 +38,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAdmissionModal, onOpenVerify }
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://res.cloudinary.com/dsfl20cs1/image/upload/v1790945935/111.png')`
+          backgroundImage: `url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2000&q=80')`
         }}
       >
         {/* Semi-transparent dark overlay so the background image is clearly visible throughout */}
